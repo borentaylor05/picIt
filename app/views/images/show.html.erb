@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @image.photo.url(:medium) %> 
+
+<p>
+  <b>Title:</b>
+  <%= @image.title %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @image.comment %>
+</p>
+
+<p>
+  <b>Posted at:</b>
+  <%= @image.posted_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
