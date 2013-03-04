@@ -1,0 +1,114 @@
+@import "bootstrap";
+
+.hero-unit{
+	background-color: #CCC;
+	box-shadow: 3px 3px 5px black;
+	z-index: 0;
+	margin-top:20px;
+}
+
+ul li{
+	display: inline;
+}
+
+.second{
+	margin-left:143px;
+}
+
+button{
+	margin-top:10px;
+	border-radius: 12px;
+	height: 45px;
+	width: 120px;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 1px lime;
+	box-shadow: 2px 2px 1px black;
+
+	&:hover{
+	background-color: #09f;
+	}
+}
+
+a{
+	color: white;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+body{
+	padding-top: 60px;
+}
+
+section{
+	overflow: auto;
+}
+
+td{
+	padding:15px;
+	color: #666;
+	z-index: 100;
+}
+
+textarea{
+	resize: vertical;
+}
+
+th{
+	color: #09f;
+}
+
+.navbar-inner{
+	height: 60px;
+}
+
+.center{
+	text-align: center;
+}
+
+.center h1{
+	text-align: center;
+}
+
+#meta{
+	font-size:1.3em;
+}
+
+#link{
+	color: red;
+	font-weight: bold;
+}
+
+#logo{
+	color: white;
+	padding-top:16px;
+	font-size: 2.6em;
+	position: relative;
+	float: left;
+	margin-left:-250px;
+	font-weight: bold;
+
+	&:hover{
+	color: #09f;
+	}
+}
+
+#page{
+	margin-top:16px;
+	color: #CCC;
+	font-weight:bold;
+	font-size: 3em;
+}
+
+.btn{
+	background-color: #666;
+	color: white;
+}
+
+.nav li{
+	margin-top: 0px;
+	font-size: 1.3em;
+}

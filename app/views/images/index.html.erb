@@ -1,9 +1,13 @@
-<h1>Listing Images</h1>
+<%= provide(:title, 'Home') %>
 
+<a href="/images/new"><button>New Image</button></a>
+
+<div class="center hero-unit">
 <table>
   <tr>
     <th>Title</th>
     <th>Pic</th>
+    <th>Owner</th>
     <th>Posted at</th>
     <th></th>
     <th></th>
@@ -12,16 +16,18 @@
 
 <% @images.each do |image| %>
   <tr>
-    <td><%= image.title %></td>
-    <td><%= image_tag image.photo.url(:thumb) %></td>
-    <td><%= image.posted_at %></td>
-    <td><%= link_to 'Show', image %></td>
-    <td><%= link_to 'Edit', edit_image_path(image) %></td>
-    <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td id= "meta"><%= image.title %></td>
+    <td><%= link_to image_tag(image.photo.url(:thumb)), image %></td>
+    <td  id= "meta"><%= image.user.email%></td>
+    <td id= "meta"><%= image.posted_at%></td>
+    <td><%= link_to 'Show', image, id: "link" %></td>
+    <td><%= link_to 'Edit', edit_image_path(image),  id: "link" %></td>
+    <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?'}, id: "link"  %></td>
   </tr>
 <% end %>
 </table>
 
+</div>
+
 <br />
 
-<%= link_to 'New Image', new_image_path %>

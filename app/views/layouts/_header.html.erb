@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<ul class="nav pull-left">
+					<li><%= link_to 'PicIt/', '/images/', id: "logo" %></li>
+					<li class="second"><%= link_to page_title(yield(:title)), '#', id: "logo" %></li>
+				</ul>
+				<nav>
+					<ul class="nav pull-right">
+						<li><%= link_to "Home", '/images' %></li>
+						<li><%= link_to "Help", '#' %></li>
+						<li><%= link_to "Sign In", '#' %></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
